@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react'
 
 import {
@@ -53,8 +54,8 @@ const styles = StyleSheet.create({
 })
 
 DigitalClock.propTypes = Object.assign({}, Component.propTypes, {
-    clockWrapperStyles: View.propTypes.style,
-    clockStyles: Text.propTypes.style,
+    clockWrapperStyles: PropTypes.style,
+    clockStyles: PropTypes.style,
 })
 
 export default DigitalClock
